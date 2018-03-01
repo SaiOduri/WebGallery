@@ -1,0 +1,38 @@
+#images{
+    margin-top:50px;
+    border: 2px #3C3D3F solid;
+    padding:20px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(0, 0, 0);
+}
+
+.image_div{
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    padding:1px;
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+.image_size{
+    height: 100%;
+    width: 100%;
+}
+
+.image_info{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.default{
+    margin-top: 10px;
+    width: 800px;
+    height: 500px;
+    Background-color: rgb(0, 0, 0);
+}

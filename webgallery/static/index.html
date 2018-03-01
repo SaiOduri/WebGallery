@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="style/messages.css" rel="stylesheet" type="text/css"/>
+    <link href="style/form.css" rel="stylesheet" type="text/css"/>
+    <link href ="style/images.css" rel="stylesheet" type="text/css"/>
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/" id="title">The Web Gallery</a>
+        <button id ='signinbox' type="button" class="btn form_element">Sign Up/In</button>
+        <button id ='signoutbox' type="button" class="btn form_element">Sign Out</button>
+    </header>
+    
+    <form class ="complex_form hidden" id = "sign">
+        <div class="form_title">Sign Up/In</div>
+        <div id = "signupbox">
+            <div class = "form_radio">
+                <input type="text" id="username" name = "username" class="form_element" placeholder="Username" required/>
+                <input type="text" id="password" name = "password" class="form_element" placeholder="Password" required/>
+            </div>
+                <button id ='signup' type="submit" class="btn form_element">Sign Up</button>
+                <button id ='signin' type="submit" class="btn form_element">Sign In</button>
+            
+              
+            </div>
+        </div>
+    </form>
+    <form class="complex_form" id="select_user_form">
+        <label class="form_element">Select user
+        <select id="select_username" class="select">
+      </select>
+      </label>
+
+    </form>
+    <form class="complex_form" id="add_image_form" action='/api/images/' method="POST" enctype="multipart/form-data">
+      <div class="form_title">Add an image</div>
+    <div id = "box" class = "hidden">
+      <div class = "form_radio">
+        <input type="text" id="title_name" name = "title" class="form_element" placeholder="Enter the image title" name="user_name" required/>
+      </div>
+      
+      <input type="file" id="file"  name = "file" class="form_author" required></input>
+        <button id ='sub' type="submit" class="btn form_element">Add Image</button>
+    </div>
+        <div class = "form_show">
+
+                <button id ='show' type="button" class="btn form_element">Show Form</button>
+    
+        </div>
+    
+    </form>
+
+
+    <div id="box2" class = "hidden">
+
+            <div id = "Images">
+                    <div class = "default">
+                        
+                    </div>
+                    
+                </div>
+                    
+                <div id = "btn_location" class = "button_locations">
+                        <button id = 'left' type = 'button' class = 'btn2'><-</button>
+                        <button id = 'del' type = "button" class = "delete_btn">Delete</button>
+                        <button id = 'right' type = 'button' class = 'btn2'>-></button>
+                        </div>
+            
+                <div id = "Information">
+            
+                </div>
+
+
+    </div>
+
+    <div id="box3">
+    <form class="complex_form" id="create_message_form">
+            <div class="form_title">Post a message</div>
+            <textarea rows="5" id="post_content_2" class="form_element_2" name="user_message" placeholder="Enter your message" required></textarea>
+            <button type="submit" class="btn">Post your message</button>
+    </form>
+    <div id = "btn_location2" class = "button_locations">
+
+            <button id = 'last_comment_page' type = 'button' class = 'btn2'><-</button>
+            <h1 id= 'pagenumber'></h1>
+            <button id = 'next_comment_page' type = 'button' class = 'btn2'>-></button>
+        
+    </div>
+    </div>
+
+    <div id="messages">
+        
+    </div>
+    
+    <footer>
+        <a href='./credits.html'>credits</a>
+    </footer>
+</body>
+</html>

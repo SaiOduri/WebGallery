@@ -1,0 +1,109 @@
+.complex_form{
+    margin-top:50px;
+    border: 2px #3C3D3F solid;
+    padding:20px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.complex_form .form_title{
+    font-size:20px;
+    font-weight:bold;
+    margin:-20px -10px 20px -10px;
+    padding:10px 0px 10px 25px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.complex_form .form_radio{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.complex_form .form_element{
+     margin-bottom:10px;
+     font-size: 20px;
+     border-radius:10px;
+     padding:5px 10px 5px 10px;
+     width: 100%;
+}
+
+.complex_form .form_element_2{
+    margin-bottom:10px;
+     font-size: 20px;
+     border-radius:10px;
+     padding:5px 10px 5px 10px;
+}
+
+.complex_form .form_author{
+    margin-bottom:10px;
+    font-size: 20px;
+    border-radius:10px;
+    padding:5px 10px 5px 10px;
+    width: 97%;
+}
+
+/* This snippet of code was generated using: http://css3buttongenerator.com/ */
+
+.btn{
+    text-align:center;
+    font-size: 20px;
+    color: #3C3D3F;
+    background: #69eb70;
+    border: 2px #3C3D3F solid;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+  background: rgb(10, 107, 15);
+  color: #ffffff;
+}
+
+.form_show{
+    margin-top: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn2{
+    text-align:center;
+    font-size: 20px;
+    color: #3C3D3F;
+    background: #6fe1f3;
+    border: 2px #3C3D3F solid;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn2:hover {
+    background: rgb(58, 136, 160);
+    color: #ffffff;
+  }
+
+.delete_btn{
+    text-align:center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: #ff0000;
+    border: 2px #3C3D3F solid;
+    padding: 10px 20px 10px 20px;
+    align-content: center;
+}
+
+.delete_btn:hover{
+    background: rgb(143, 3, 3);
+    color: #ffffff;
+}
+
+.button_location{
+    text-align: center;
+}
+
+.button_locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
